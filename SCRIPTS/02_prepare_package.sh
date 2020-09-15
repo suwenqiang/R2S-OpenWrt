@@ -90,6 +90,8 @@ wget https://raw.githubusercontent.com/Lienol/openwrt/dev-master/target/linux/ge
 popd
 #OC
 cp -f ../PATCH/new/main/999-unlock-1608mhz-rk3328.patch ./target/linux/rockchip/patches-5.4/999-unlock-1608mhz-rk3328.patch
+#huawei 5G
+cp -f ../PATCH/new/main/0001-huawei-patch.patch ./target/linux/rockchip/patches-5.4/0001-huawei-patch.patch
 #IRQ
 #rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/net/40-net-smp-affinity
 #cp -f ../PATCH/new/script/40-net-smp-affinity ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/net/40-net-smp-affinity
